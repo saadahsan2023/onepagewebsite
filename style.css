@@ -1,0 +1,91 @@
+ *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'arial';
+    color: #fff;
+}
+#container{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 'heading heading box box';
+  background-image: url('kelly-sikkema-LM17xCofKA0-unsplash.jpg');
+  background-position: center;
+  background-size: cover;
+}
+ #heading{
+    grid-area: heading;
+    position: relative;
+    right: 90px;
+
+}
+ #box{
+    grid-area: box;
+    height: 170px;
+    position: relative;
+    left: 100px;
+    bottom: 30px;
+  
+}
+.section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 210px;
+    top: 60px;
+    width: 120%;
+    height: 80%;
+    background: transparent;
+    border: 2px solid rgba(255,255,255,0.5);
+    border-radius: 10px;
+    backdrop-filter: blur(15px);
+}
+.heading-content h1{
+ color: #fff;
+ font-size: 3rem;
+ width: 200px;
+ letter-spacing: 2.5px;
+ font-family: 'Montserrat', sans-serif;
+}
+.heading-content p{
+    color: #fff;
+ font-family: 'Montserrat', sans-serif;
+    word-spacing: 3px;
+    letter-spacing: 2px;
+    margin-top: 20px;
+}
+.icon .bi{
+    color: #fff;
+    transform: scale(1.75);
+    margin-left: 20px;
+    margin-top: 50px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.icon .bi:hover{
+    transform: translateY(-10px);
+}
+.icon{
+    position: relative;
+    right: 38px;
+}
+.box-content{
+    height: 50px;
+    border-top: 2px solid #fff;
+    width: 280px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.box-content label{
+    color: #fff;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.box-content label:hover{
+    transform: translateY(-12px);
+}
+
